@@ -1,4 +1,4 @@
-const logo= document.querySelector('.logoAccueil');
+const logo = document.querySelector('.logoDownload');
 
 let scale = 1;
 let direction = 1;
