@@ -20,7 +20,7 @@
             <a class="lienNavigation" href="index.html" download>Accueil</a>
             <a class="lienNavigation" href="index.html" download>Présentation</a>
             <a class="lienNavigation" href="index.html" download>fonctionnalités</a>
-            <a class="lienNavigation" href="index.html" download>Télécharger l'application</a>
+            <a class="lienNavigation" href="#containerDownload" download>Télécharger l'application</a>
        </div>
     </nav>
 
@@ -153,11 +153,25 @@
         </div>
     </div>
     </section>
-    <section class="containerDownload">
+    <section id="containerDownload" class="containerDownload">
         <div class="carteDownload">
-            <h1 class="titreDownload">StudentSwap</h1> 
-            <img class="logoDownload"src="src/style/img/Logo.png" alt="Logo StudentSwap">
-            <a class="boutonDownload" href="src/app/" download>Télécharger l'application</a>
+            <img class="logoDownload"src="src/style/img/Download.png" alt="Logo StudentSwap">
+            <div class="separatorDownload">
+                <div class="downloadMultiColor">
+                    <h2 class="titreDownload">Prêt à commencer ton <div class="texteCouleurJaune">premier échange</div> ?</h2>
+                </div>
+                <p class="texteDownload">Rejoigner StudentSwap et commence ton premier échange dès maintenant !</p>
+            </div>
+
+            <a class="boutonDownload" href="src/app/" download>
+                <svg width="20"  height="20"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="M12 3V14" stroke="#08051A" stroke-width="2.8" stroke-linecap="round"/>
+                    <path d="M7.5 10.5L12 15L16.5 10.5" stroke="#08051A" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 18H19" stroke="#08051A" stroke-width="2.8" stroke-linecap="round"/>
+                    <path d="M7 18V20H17V18" stroke="#08051A" stroke-width="2.8" stroke-linejoin="round"/> 
+                </svg>
+                Télécharger StudentSwap
+            </a>
         </div>
     </section>
     <footer>
