@@ -15,8 +15,8 @@ nav{
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 1;
-    height: 50px;
+    z-index: 10;
+    height: 70px;
 }
 
 .nav-container{
@@ -44,7 +44,10 @@ nav{
     color: #fff;
     text-decoration: none;
 }
-
+.logoNavigation {
+    width: 250px;
+    height: auto;
+}
 .titreDownload{ 
     color:#FFE14D;
     font-family : Unbounded, sans-serif;
@@ -152,6 +155,7 @@ footer {
 .titrePresentation {
     font-family: Unbounded, sans-serif;
     color: #FFE14D;
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
@@ -159,8 +163,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2B1FFF;
-    border: 5px solid #000;
     max-width: 800px;
     border-radius: 30px;
     margin: 0 auto;
@@ -170,69 +172,262 @@ footer {
 
 .textePresentation {
     font-family: 'DM Sans', sans-serif;
-    color: #fff;
     max-width: 500px; 
     margin-right:  50px;
     margin-bottom: 40px;
 }
 
-.containerFonctionnalites {
+.titleSection {
+    font-family: Unbounded, bold;
+    color: #000;
+    font-size: 15px;
+    background-color: #FFE14D;
+    text-align: center;
+    padding: 10px 8px;
+    border-radius: 30px;
+    border: 5px solid #000;
+    margin-bottom: 50px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.FeatureBar{ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2B1FFF;
+    margin: 30px 50px;
+    padding: 50px 0px;
+    border-radius: 30px;
+    border: 5px solid #000;
+}
+
+.ColonneFeature {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: #2B1FFF;
-    border: 5px solid #000;
-    max-width: 800px;
-    border-radius: 30px;
+    flex-direction: row;
+}
+
+.imageFeature {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.SeparationFeature {
+    width: 2px;
+    background-color: #fff;
+    margin: 0 20px;
+    height: 100px;
+}
+
+.featureContainer { 
+    max-width: 300px; 
+}
+
+.titreFeature {
+    font-family: Unbounded, sans-serif;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.texteFeature {
+    font-family: 'DM Sans', sans-serif;
+    color: #fff;
+    max-width: 300px; 
+}
+
+.BodyFonctionnalites {
+    max-width: 1500px;
+    padding: 50px 0;
     margin: 0 auto;
-    padding: 20px;
-    margin-top: 100px;
+}
+
+.containerFonctionnalites {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .Fonctionnalites {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 .titreFonctionnalites {
+    font-size: 2em;
     font-family: Unbounded, sans-serif;
-    color: #FFE14D;
+    color: #0E0B1F;
     margin-bottom: 20px;
 }
 
 .texteFonctionnalites {
     font-family: 'DM Sans', sans-serif;
-    color: #fff;
+    color: #0E0B1F;
     max-width: 500px; 
-    margin-right:  50px;
-    margin-bottom: 40px;
 }
 
 .miniCardContainer {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
-/* .miniCard {
-    background-color: #FFE14D;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1;
-    margin: 0 10px;
-    text-align: center;
-} */
+.FonctionnalitesCardSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .FonctionnalitesCard {
-    background-color: #FFE14D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     border-radius: 10px;
     flex: 1;
     margin: 0 10px;
-    text-align: center;
+    border: 5px solid #000;
 }
+
+.imageFonctionnalitesCard {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.FonctionnalitesCard:nth-child(1) {
+   background-color: #FFE14D;
+   color: #000;
+}
+.FonctionnalitesCard:nth-child(2) {
+   background-color: #FF6AD5;
+   color: #000;
+}
+.FonctionnalitesCard:nth-child(3) {
+    background-color: #2B1FFF;
+    color: #fff;
+}
+.texteCouleur{ 
+    color: #FF6AD5;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bodyCMC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+.headerCmc {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.cmc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width : fit-content;
+    padding: 50px 0;
+}
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+    /* Ligne pointillée entre les cartes */
+.connector {
+    flex: 0 0 50px;
+    border-top: 3px dashed #333;
+}
+
+    /* Carte */
+.cardCMC {
+    position: relative;
+    flex: 1;
+    background: #fff;
+    border: 2.5px solid #111;
+    border-radius: 20px;
+    height: 180px;
+    width: 500px;
+    padding-top: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 0 #111;   /* petite ombre "cartoon" */
+    transition: transform .2s, box-shadow .2s;
+}
+.cardCMC:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 6px 6px 0 #111;
+}
+
+    /* Pastille numérotée qui déborde du coin */
+.badge {
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2.5px solid #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 16px;
+}
+.badge.pink   { background: #f25cc4; color: #111; }
+.badge.yellow { background: #ffe53d; color: #111; }
+.badge.blue   { background: #2d34e8; color: #fff; }
+
+.icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 12px;
+}
+
+.cardCMC h3 {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.cardCMC p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+}
+
+    /* Version mobile : cartes empilées */
+    @media (max-width: 700px) {
+      .steps { flex-direction: column; }
+      .connector {
+        flex: 0 0 40px;
+        border-top: none;
+        border-left: 3px dashed #333;
+      }
+      .cardCMC { width: 100%; }
+    }
+
 
 
