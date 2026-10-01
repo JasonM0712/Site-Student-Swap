@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --footer-bg: #0c0b26;
+    --footer-border: rgba(255, 255, 255, 0.08);
+    --text: #ffffff;
+    --text-muted: #c9c8dd;
+    --pink: #FF6AD5;
+}
+
 nav{
     display: flex;
     justify-content: center;
@@ -62,8 +70,8 @@ nav{
     align-items: center;
     margin: 0;
     flex-direction: column;
-    min-height: 70vh;
-    
+    margin-top: 100px;
+    margin-bottom: 120px;
 }
 
 .boutonDownload:hover {
@@ -172,15 +180,6 @@ nav{
     gap: 20px;
 }
 
-footer {
-    background-color: #0E0B1F;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-} 
 
 .titrePresentation {
     font-family: Unbounded, sans-serif;
@@ -363,6 +362,7 @@ footer {
     width: fit-content;
     margin: 0 auto;
 }
+
 .headerCmc {
     display: flex;
     align-items: center;
@@ -449,16 +449,294 @@ footer {
     color: #333;
 }
 
+.OpenBurger {
+    display: flex;
+}
+
+.closeBurger {
+    display: none;
+}
+
+.menuBurger {
+    cursor: pointer;
+}
+
+.navBarMobile {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position:fixed;
+}
+
+.containerMobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.navBarreMobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.burger {
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: 0.4s;
+}
+
+.navMobile {
+    display: none;
+    width: 100%;
+}
+
+.navImgMobile {
+    height: 50px;
+    width: 50px;
+}
+
+.navHrefMobile {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navButtonMobile {
+    text-decoration: none;
+    align-items: center;
+    margin: 0%;
+    padding-top: 30px;
+    font-family: Unbounded, sans-serif;
+    font-weight: bold;
+    background-color: #f25cc4;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+}
+
+.navBarreMobile ul {
+    list-style: none;
+}
+
+.navButtonMobile li {
+    list-style: none;
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.buttonSoutenir {
+    background-color: #ffe53d;
+    font-family: Unbounded, sans-serif;
+    font-weight: bold;
+    color: #0E0B1F;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.AppEtudiant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ValidationContainerAppEtudiant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.ValidationAppEtudiant {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin : 0px;
+    margin-bottom: 20px;
+}
+
+.ValidationAppEtudiant p {
+    margin-left: 10px;
+}
+
+.ValidationLogo {
+    height: 30px;
+    width: 30px;
+}
+
+.footer {
+    background-color:#0E0B1F;
+    color: #fff;
+    font-family: Unbounded, sans-serif;
+}
+
+.footer__top {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 40px 24px;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+/* Logo */
+.footer__brand-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__logo {
+    height: 100px;
+    width: auto;
+}
+
+.footer__name {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+
+
+.footer__slogan {
+      margin-top: 6px;
+      margin-left: 2px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Colonnes de liens */
+    .footer__title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .footer__links { list-style: none; }
+
+    .footer__links li + li { margin-top: 4px; }
+
+    .footer__links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      transition: color 0.2s;
+    }
+
+    .footer__links a:hover { color: var(--pink); }
+
+    /* Réseaux sociaux */
+    .footer__socials {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer__socials a {
+      width: 34px;
+      height: 34px;
+      border: 2px solid var(--text);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .footer__socials a:hover {
+      background: var(--pink);
+      border-color: var(--pink);
+    }
+
+    /* Barre du bas */
+    .footer__bottom {
+      border-top: 1px solid var(--footer-border);
+    }
+
+    .footer__bottom-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 14px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .footer__bottom-inner i { color: var(--pink); margin-left: 4px; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 860px) {
+      .footer__top { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 520px) {
+      .footer__top {
+        grid-template-columns: 1fr;
+        padding: 28px 20px;
+        text-align: center;
+      }
+      .footer__brand-link,
+      .footer__socials { justify-content: center; }
+      .footer__bottom-inner {
+        flex-direction: column;
+        padding: 14px 20px;
+        text-align: center;
+      }
+
     /* Version mobile : cartes empilées */
     @media (max-width: 700px) {
-      .steps { flex-direction: column; }
+
+      .steps { 
+        flex-direction: column; 
+        }
+
       .connector {
         flex: 0 0 40px;
         border-top: none;
         border-left: 3px dashed #333;
       }
-      .cardCMC { width: 100%; }
+
+      .cardCMC { 
+        width: 100%; 
+        }
+
+        nav {
+            display: none;
+        }
+
+        .navMobile {
+            display:flex;
+        }
+
     }
 
 
-
+}

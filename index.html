@@ -24,6 +24,23 @@
        </div>
     </nav>
 
+    <nav class="navMobile">
+        <ul class="navBarMobile">
+            <div class="containerMobile">
+            <a href="indexAccueil.html">
+                <img class="navImgMobile" src="src/style/img/Logo.png" alt="logo ">
+            </a>
+            <div class="menuBurger">
+                <img class="burger" src="src/style/img/menuburger.png" alt="menu Burger">
+            </div>
+            <div class="navButtonMobile closeBurger">
+                <li><a href="index.html" class="navHrefMobile">Accueil</a></li>
+                <li><a href="indexPresentation.html" class="navHrefMobile">Présentation</a></li>
+                <li><a href="indexEducation.html" class="navHrefMobile">fonctionnalités</a></li>
+                <li><a href="https://www.helloasso.com/associations/perles-du-niari" class="navHrefMobile"><button class="buttonSoutenir">Télécharger l'application</button></a></li>
+            </div>
+        </ul>
+    </nav>
 
     <section class="containerPresentation">
         <div class="paragraphePresentation">
@@ -153,6 +170,32 @@
         </div>
     </div>
     </section>
+    <section class="AppEtudiant">
+        <div class="containerTextAppEtudiant">
+            <h2 class="titreFonctionnalites">Une application pensée pour <div class="texteCouleur">les étudiants</div></h2>
+            <p>StudentSwap regroupe tout ce dont tu as besoin pour échanger facilement avec d'autres étudiants où que tu sois.</p>
+            <div class="ValidationContainerAppEtudiant">
+                <div class="ValidationAppEtudiant">
+                    <img class="ValidationLogo" src="src/style/img/ValidationLogoQuatre.png" alt="Validation App Étudiant">
+                    <p>Recherche avancée et filtres personnalisés</p>
+                </div>
+                <div class="ValidationAppEtudiant">
+                    <img class="ValidationLogo" src="src/style/img/ValidationLogoTrois.png" alt="Validation App Étudiant">
+                    <p>Messagerie intégrée pour communiquer avec d'autres étudiants</p>
+                </div>
+                <div class="ValidationAppEtudiant">
+                    <img class="ValidationLogo" src="src/style/img/ValidationLogoDeux.png" alt="Validation App Étudiant">
+                    <p>Annonces géolocalisées pour trouver des échanges près de chez toi</p>
+                </div>
+                <div class="ValidationAppEtudiant">
+                    <img class="ValidationLogo" src="src/style/img/ValidationLogoOne.png" alt="Validation App Étudiant">
+                    <p>Gratuit et sans commission</p>
+                </div>
+            </div>
+        </div>
+        <img src="src/style/img/AppEtudiant.png" alt="Application StudentSwap">
+    </section>
+
     <section id="containerDownload" class="containerDownload">
         <div class="carteDownload">
             <img class="logoDownload"src="src/style/img/Download.png" alt="Logo StudentSwap">
@@ -174,9 +217,56 @@
             </a>
         </div>
     </section>
-    <footer>
-        <p>&copy; 2026 StudentSwap. Tous droits réservés.</p>
-    </footer>
+ <footer class="footer">
+    <div class="footer__top">
+
+      <!-- Marque -->
+      <div class="footer__brand">
+        <img class="footer__logo" src="src/style/img/FooterLogo.png" alt="Logo StudentSwap">
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <h4 class="footer__title">Navigation</h4>
+        <ul class="footer__links">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">L'application</a></li>
+          <li><a href="#">Fonctionnalités</a></li>
+          <li><a href="#">Comment ça marche ?</a></li>
+        </ul>
+      </div>
+
+      <!-- Légal -->
+      <div>
+        <h4 class="footer__title">Légal</h4>
+        <ul class="footer__links">
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Réseaux -->
+      <div>
+        <h4 class="footer__title">Suivez-nous</h4>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner">
+        <p>© 2026 StudentSwap. Tous droits réservés.</p>
+        <p>Une application faite par et pour les étudiants <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+  </footer>
     <script src="src/front/script.js"></script>
 </body>
 </html>
