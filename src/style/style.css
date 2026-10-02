@@ -714,18 +714,27 @@ nav{
     /* Version mobile : cartes empilées */
     @media (max-width: 700px) {
 
+        body { 
+            display: flex;
+
+            flex-direction: column;
+            margin: 0;
+        }
+      
+
       .steps { 
-        flex-direction: column; 
+            flex-direction: column; 
         }
 
       .connector {
-        flex: 0 0 40px;
-        border-top: none;
-        border-left: 3px dashed #333;
+            flex: 0 0 40px;
+            border-top: none;
+            border-left: 3px dashed #333;
       }
 
       .cardCMC { 
-        width: 100%; 
+            width: 100%; 
+            height: 200px
         }
 
         nav {
@@ -735,6 +744,156 @@ nav{
         .navMobile {
             display:flex;
         }
+
+        .containerPresentation{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 370px;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0 10px;
+        }
+
+        .FeatureBar{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0 10px;
+            width: 80%;
+            margin-top: 20px;
+
+        }
+
+        .ColonneFeature{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .SeparationFeature{
+            margin: 20px 0;
+            height: 1px;
+            width: 80%;
+        }
+
+        .titrePresentation{ 
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .textePresentation{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .titreFeature{
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .texteFeature{
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .BodyFonctionnalies{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .FonctionnalitesCard{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .miniCardContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 330px;
+        }
+
+        .imageFonctionnalitesCard{
+            height : auto;
+            width: 100px;
+        }
+
+        .headerCmc{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+        } 
+
+        .titreFonctionnalites{
+            font-size: 20px;
+            margin-bottom: 15px;
+            max-width: 330px;
+        }
+
+        .texteFonctionnalites{
+            font-size: 16px;
+            margin-bottom: 15px;
+            max-width: 330px;
+        }
+
+        .AppEtudiant{
+            font-size: 16px;
+            margin-bottom: 15px;
+            max-width: 330px;
+            flex-direction: column;
+        }
+
+        .ContainerDownload{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 330px;
+        }
+
+        .carteDownload{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+            height: 600px;
+            max-width: 330px;
+        }
+
+        .separatorDownload{
+
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .buttonDownload{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .texteDownload{
+            font-size: 16px;
+            margin-bottom: 15px;
+            max-width: 330px;
+        }
+
+        .logoDownload{
+            height: auto;
+            width: 150px;
+        }
+
+
+
 
     }
 
