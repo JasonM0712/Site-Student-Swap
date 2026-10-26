@@ -17,9 +17,9 @@
     <nav>
        <div class="nav-container"> 
             <img class="logoNavigation" src="src/style/img/LogoTexte.png" alt="Logo StudentSwap">
-            <a class="lienNavigation" href="index.html" download>Accueil</a>
-            <a class="lienNavigation" href="index.html" download>Présentation</a>
-            <a class="lienNavigation" href="index.html" download>fonctionnalités</a>
+            <a class="lienNavigation" href="#containerPresentation" download>Accueil</a>
+            <a class="lienNavigation" href="#containerPresentation" download>Présentation</a>
+            <a class="lienNavigation" href="#FeatureSection" download>Fonctionnalités</a>
             <a class="lienNavigation" href="#containerDownload" download>Télécharger l'application</a>
        </div>
     </nav>
@@ -36,51 +36,52 @@
             <div class="navButtonMobile closeBurger">
                 <li><a href="index.html" class="navHrefMobile">Accueil</a></li>
                 <li><a href="indexPresentation.html" class="navHrefMobile">Présentation</a></li>
-                <li><a href="indexEducation.html" class="navHrefMobile">fonctionnalités</a></li>
+                <li><a href="indexEducation.html" class="navHrefMobile">Fonctionnalités</a></li>
                 <li><a href="https://www.helloasso.com/associations/perles-du-niari" class="navHrefMobile"><button class="buttonSoutenir">Télécharger l'application</button></a></li>
             </div>
         </ul>
     </nav>
 
-    <section class="containerPresentation">
+    <section id="containerPresentation" class="containerPresentation">
         <div class="paragraphePresentation">
             <h1 class="titrePresentation">Echange. <br>Partage. <br> Etudie. <br> <div class="texteCouleur">StudentSwap.</div></h1>
             <p class="textePresentation">La plateforme qui facilite l'échange d'étudiants entre différentes institutions.</p>
         </div>
         <img class="imagePresentation" src="src/style/img/Mascotte Match.png" alt="Présentation StudentSwap">
     </section>
-
-    <section class="FeatureBar">
-        <div class="ColonneFeature">
-            <img src="src/style/img/LogoFeatureBarUn.png" alt="" class="imageFeature">
-            <div class="featureContainer">
-                <h3 class="titreFeature">Echange entre étudiants</h3>
-                <p class="texteFeature">Une vraie communauté partout en france</p>
+    <section id="FeatureSection" class="FeatureSection">
+        <div class="FeatureBar">
+            <div class="ColonneFeature">
+                <img src="src/style/img/LogoFeatureBarUn.png" alt="" class="imageFeature">
+                <div class="featureContainer">
+                    <h3 class="titreFeature">Echange entre étudiants</h3>
+                    <p class="texteFeature">Une vraie communauté partout en france</p>
+                </div>
             </div>
-        </div>
 
-        <div class="SeparationFeature"></div>
+            <div class="SeparationFeature"></div>
 
-        <div class="ColonneFeature">
-            <img src="src/style/img/LogoFeatureBarDeux.png" alt="" class="imageFeature">
-            <div class="featureContainer">
-                <h3 class="titreFeature">Annonces rapides</h3>
-                <p class="texteFeature">Publie tes annonces rapidement et facilement. en quelques clics.</p>
+            <div class="ColonneFeature">
+                <img src="src/style/img/LogoFeatureBarDeux.png" alt="" class="imageFeature">
+                <div class="featureContainer">
+                    <h3 class="titreFeature">Annonces rapides</h3>
+                    <p class="texteFeature">Publie tes annonces rapidement et facilement. en quelques clics.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="SeparationFeature"></div>
+            <div class="SeparationFeature"></div>
 
-        <div class="ColonneFeature">
-            <img src="src/style/img/LogoFeatureBarTrois.png" alt="" class="imageFeature">
-            <div class="featureContainer">
-                <h3 class="titreFeature">Faites des heureux</h3>
-                <p class="texteFeature">Echanger ce que vous n'avez plus besoin afin de rendre d'autres heureux.</p>
+            <div class="ColonneFeature">
+                <img src="src/style/img/LogoFeatureBarTrois.png" alt="" class="imageFeature">
+                <div class="featureContainer">
+                    <h3 class="titreFeature">Faites des heureux</h3>
+                    <p class="texteFeature">Echanger ce que vous n'avez plus besoin afin de rendre d'autres heureux.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="BodyFonctionnalites">
+    <section id="Fonctionnalites" class="BodyFonctionnalites">
 
         <div class="containerFonctionnalites">
             <div class="titleSection">
@@ -121,7 +122,7 @@
             </div>
         </div>
     </section>
-    <section class="bodyCMC">
+    <section id="CommentCaMarche" class="bodyCMC">
     <div class="cmc">
         <div class="headerCmc">
             <div class="titleSection">
@@ -230,10 +231,10 @@
       <div>
         <h4 class="footer__title">Navigation</h4>
         <ul class="footer__links">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">L'application</a></li>
-          <li><a href="#">Fonctionnalités</a></li>
-          <li><a href="#">Comment ça marche ?</a></li>
+          <li><a href="#containerPresentation">Accueil</a></li>
+          <li><a href="#AppEtudiant">Présentation</a></li>
+          <li><a href="#Fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="#CommentCaMarche">Comment ça marche ?</a></li>
         </ul>
       </div>
 
